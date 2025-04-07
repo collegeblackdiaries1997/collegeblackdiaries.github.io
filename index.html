@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>College Black Diaries</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,7 +17,7 @@
     header {
       background: #000;
       color: #fff;
-      padding: 40px 20px;
+      padding: 40px 20px 20px;
       text-align: center;
     }
     header h1 {
@@ -24,6 +27,21 @@
     header p {
       font-size: 1.2em;
       margin-top: 10px;
+    }
+    nav {
+      background: #111;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1em;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     section {
       padding: 40px 20px;
@@ -62,6 +80,13 @@
     form button:hover {
       background-color: #444;
     }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
     footer {
       background: #eee;
       text-align: center;
@@ -82,6 +107,12 @@
     <p>BECAUSE EVERY STORY NEEDS TO BE HEARD.</p>
   </header>
 
+  <nav>
+    <a href="#published-stories">Published Stories</a>
+    <a href="#how-to-report">How to Report</a>
+    <a href="#share-your-story">Share Your Story</a>
+  </nav>
+
   <section>
     <h2>What is this about?</h2>
     <p>
@@ -89,19 +120,49 @@
     </p>
   </section>
 
-  <section>
+  <section id="published-stories">
+    <h2>Published Stories</h2>
+    <p>
+      Here are stories shared by brave individuals. Every story sheds light on the lived realities of students across the country. If you’ve shared your experience with us and allowed us to post it, it may appear here (with all identifying details removed).
+    </p>
+    <!-- Add real stories here -->
+    <p><em>Story #1: “It started with uncomfortable stares in class...”</em></p>
+    <p><em>Story #2: “When I reported, I was told to keep quiet and focus on my studies...”</em></p>
+    <p><em>More stories coming soon.</em></p>
+  </section>
+
+  <section id="how-to-report">
+    <h2>How to Report an Incident Effectively</h2>
+    <p>
+      If you’re ready to take a step beyond sharing anonymously and want to report an incident formally, here’s a quick guide that may help:
+    </p>
+    <ul>
+      <li><strong>1. Document Everything:</strong> Record dates, times, details, screenshots—anything that may support your case.</li>
+      <li><strong>2. Know Your Rights:</strong> Understand the <a href="https://www.shebox.nic.in/" target="_blank">Vishakha Guidelines</a> and the <a href="https://wcd.nic.in/sites/default/files/Sexual-Harassment-at-Workplace-Act.pdf" target="_blank">POSH Act</a>.</li>
+      <li><strong>3. Reach the Right Authority:</strong> Report to your college’s ICC (Internal Complaints Committee) or Women’s Cell.</li>
+      <li><strong>4. Seek Support:</strong> Don’t go through it alone—talk to supportive peers, teachers, or NGOs.</li>
+      <li><strong>5. Use Online Portals:</strong> File complaints at <a href="https://www.shebox.nic.in/" target="_blank">SHe-Box</a> or <a href="https://cybercrime.gov.in/" target="_blank">Cybercrime Portal</a>.</li>
+      <li><strong>6. Follow Up:</strong> Keep a copy of your complaint and escalate if necessary to UGC or the Women’s Commission.</li>
+    </ul>
+    <p>You are not alone. Your voice matters. 🤍</p>
+  </section>
+
+  <section id="share-your-story">
     <h2>Share Your Story</h2>
-    <p>Got something on your mind? something you couldn't share before? Submit it anonymously.</p>
+    <p>Got something on your mind? Something you couldn't share before? Submit it anonymously.</p>
+    <p style="font-size: 1em; color: #666; margin-top: -10px;">
+      <strong>Note:</strong> Your submission is <strong>completely anonymous</strong>—you don’t need to mention your name, college, or any personal identifiers. If you're comfortable, you may name the perpetrator to help others stay informed and safe.
+    </p>
 
     <form action="https://formspree.io/f/xgvapzod" method="POST">
-      <textarea name="message" placeholder="Write your story here..." required></textarea>
+      <textarea name="message" placeholder="Write your story here... (No need to share your identity, it's completely anonymous. If you wish, you can name the perpetrator to help others stay informed.)" required></textarea>
       <button type="submit">Submit Anonymously</button>
     </form>
   </section>
 
-<footer>
-  <p>Made with ❤️ by students, for students. | Contact us: collegeblackdiaries1997@proton.me (<a href="mailto:collegeblackdiaries1997@proton.me">Email</a>)</p>
-</footer>
+  <footer>
+    <p>Made with ❤️ by students, for students. | Contact us: collegeblackdiaries1997@proton.me (<a href="mailto:collegeblackdiaries1997@proton.me">Email</a>)</p>
+  </footer>
 
 </body>
 </html>
